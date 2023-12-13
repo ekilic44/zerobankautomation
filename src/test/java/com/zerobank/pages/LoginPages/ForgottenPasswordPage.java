@@ -5,8 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class ForgottenPassword {
-    public ForgottenPassword() {
+public class ForgottenPasswordPage {
+    public ForgottenPasswordPage() {
         PageFactory.initElements(Driver.getDriver(), this);
 
     }

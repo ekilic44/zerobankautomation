@@ -1,12 +1,10 @@
-@SCRUM
 Feature: Login Function
   User Story: As a user, I should be able to log in
-
-  Background: Users should go to the Main page
-    Given Users should click Signin button
-    Then Users are on the Login page
-
+  @STEP
   Scenario Outline:  "Login Function" Positive Scenario
+    Given Users are on the Main page
+    Then Users should click Signin button
+    Then Users are on the Login page
     When Users enter "<username>" and "<password>"
     And Users click Sign in button
     And Users get an error on the page
@@ -15,9 +13,12 @@ Feature: Login Function
     Examples: Valid Credentials
       | username | password |
       | username | password |
-
-  Scenario Outline: "Login Function" Negative Scenario
-    When Users enter "<InvalidUsername>" and "<InvalidPassword>"
+  @SIP
+  Scenario Outline: Login Function Negative Scenario
+    Given Users are on the Main page
+    Then Users should click Signin button
+    Then Users are on the Login page
+    When Users enter wrong credentials "<InvalidUsername>" and "<InvalidPassword>"
     And Users click Sign in button
     When users see warning the message "Login and/or password are wrong."
 
