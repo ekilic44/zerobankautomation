@@ -1,4 +1,4 @@
-package com.sword.runner;
+package com.zerobank.runners;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
@@ -16,9 +16,9 @@ import org.junit.runner.RunWith;
 
 
         features = "src/test/resources/features",
-        glue = "com/sword/step_definitions",
+        glue = "com/zerobank/step_definitions",
         dryRun = false,
-        tags=""
+        tags="@SCRUM"
 )
 
 public class CukesRunner {
