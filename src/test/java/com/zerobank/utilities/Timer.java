@@ -1,4 +1,4 @@
-package com.sword.utilities;
+package com.zerobank.utilities;
 
 import java.util.Scanner;
 
