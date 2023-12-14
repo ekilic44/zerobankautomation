@@ -10,9 +10,9 @@ public class SignedInPage {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    @FindBy(xpath = "(//a[@class='dropdown-toggle'])[1]")
-    public WebElement profileUserName;
+    @FindBy(xpath = "(//a[@class='dropdown-toggle'])[2]")
+    public WebElement userNameDropDown;
 
-    @FindBy(xpath = "//a[@href='/logout.html']")
-    public WebElement logoutFunction;
+    @FindBy(xpath = "//a[@id='logout_link']")
+    public WebElement logoutLink;
 }
