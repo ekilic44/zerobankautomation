@@ -19,7 +19,11 @@ public class Login_Page {
     @FindBy(xpath = "//input[@class='btn btn-primary']")
     public WebElement signInButton;
 
+
+    @FindBy(xpath = "//div[@class='alert alert-error']")
+    public WebElement wrongUserNameOrPassword;
+
     @FindBy(xpath = "//*[text()='Forgot your password ?']")
-    public WebElement forgotYourPassword;
+    public WebElement forgetYourPassword;
 
 }
