@@ -63,7 +63,7 @@ public class Login_Step_Definitions {
     }
 
     @When("users see warning the message {string}")
-    public void users_see_warning_the_message(String string) {
+    public void users_see_warning_the_message(String warningMessage) {
         login_page.wrongUserNameOrPassword.isDisplayed();
     }
 
@@ -73,17 +73,17 @@ public class Login_Step_Definitions {
     }
 
     @Then("Users see the warning message {string}")
-    public void users_see_the_warning_message(String string) {
+    public void users_see_the_warning_message(String warningMessage) {
         login_page.wrongUserNameOrPassword.isDisplayed();
     }
 
     @When("Users click the {string} button")
-    public void users_click_the_button(String string) {
+    public void users_click_the_button(String forgetYourPassword) {
         login_page.forgetYourPassword.click();
     }
 
     @Then("Users see the {string} page")
-    public void users_see_the_page(String string) {
+    public void users_see_the_page(String forgottenPassword) {
         forgottenPasswordPage.forgottenPassword.isDisplayed();
     }
 
